@@ -1,0 +1,126 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.active{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border: none;
+  border-radius: 50%;
+}
+.app{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+nav{
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.sidebar{
+  width: 100px;
+  height: 100%;
+  background-color: rgb(10, 80, 80);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: 0;
+
+
+}
+i{
+  font-size: 40px;
+  cursor: pointer;
+  margin-top: 30px;
+  color: bisque;
+
+}
+.container{
+  width: 83.3%;
+  height: 100%;
+  margin-right: 20px;
+}
+.sidebarr{
+  width: 200px;
+  height: 100%;
+  background-color: rgb(10, 80, 80);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 0;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.56) 20px 32px 70px 11px;
+}
+
+
+
+
+
+
+
+/* @media screen and(max-width:600px){
+  .active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border: none;
+    border-radius: 50%;
+  }
+  .app{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  nav{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  .sidebar{
+    width: 10px;
+    height: 100%;
+    background-color: rgb(10, 80, 80);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+  
+  
+  }
+  i{
+    font-size: 40px;
+    cursor: pointer;
+    margin-top: 30px;
+    color: bisque;
+    background-color: red;
+    
+  
+  }
+  .container{
+    width: 83.3%;
+    height: 100%;
+    margin-right: 20px;
+  }
+  .sidebarr{
+    width: 150px;
+    height: 100%;
+    background-color: rgb(10, 80, 80);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.56) 20px 32px 70px 11px;
+  }
+} */
