@@ -1,14 +1,18 @@
 {
-    "students":[
-        {
-        "id":"1",
-        "firstname":"Ali",
-        "lastname":"Doe"
-    },
+  "students": [
     {
-        "id":"2",
-        "firstname":"Alish",
-        "lastname":"Tom"
+      "id": "1",
+      "firstname": "Ali",
+      "lastname": "Doe",
+      "group": "N32"
     }
-]
+  ],
+  "teachers": [
+    {
+      "id": "7c4e",
+      "firstname": "weefq",
+      "lastname": "dwfw",
+      "groups": "junior"
+    }
+  ]
 }

@@ -5,11 +5,15 @@ import Students from './components/students/Students'
 import Teachers from './components/teachers/Teachers'
 import Profile from './components/profile/Profile'
 import './App.css'
+import Addstudent from './components/addstudent/Addstudent'
+import Addteacher from './components/addteacher/Addteacher'
 const App = () => {
   const [admin,setadmin]=useState('')
   const [adminn,setadminn]=useState('')
-
   const [set,setset]=useState(true) 
+  
+  
+
   const handlset=()=>{
     setset(!set)
   }
@@ -45,8 +49,11 @@ const App = () => {
       <Routes>
         <Route path='/login' element={<Login setadmin={setadmin} setadminn={setadminn} admin={admin}/>}/>
         <Route path='/students' element={<Students/>}/>
-        <Route path='/teachers' element={<Teachers/>}/>
+        <Route path='/teachers' element={<Teachers />}/>
         <Route path='/' element={<Profile admin={admin} setadmin={setadmin} adminn={adminn}/>}/>
+        <Route path='/adds' element={<Addstudent/>}/>
+        <Route path='/addt' element={<Addteacher  />}/>
+
       </Routes>
       </div>
       
