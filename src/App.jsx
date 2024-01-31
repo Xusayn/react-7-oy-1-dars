@@ -14,6 +14,33 @@ const App = () => {
   
   
 
+
+
+  const [loading,setloading]= useState(false)
+  const [data,setdata]= useState([])
+  const [error,seterror]= useState(false)
+
+  const fetchget= async()=>{
+      setloading(true)
+      try {
+      const res=await axios.get(`http://localhost:3000/students`)
+      const dataa=await res.data
+      setdata(dataa)
+      } catch (err) {
+          seterror(err)
+      }finally{
+          setloading(false)
+      }
+  }
+
+  useEffect(()=>{
+      fetchget()
+  },[])
+
+
+
+  
+
   const handlset=()=>{
     setset(!set)
   }
@@ -48,8 +75,8 @@ const App = () => {
       <div className="container">
       <Routes>
         <Route path='/login' element={<Login setadmin={setadmin} setadminn={setadminn} admin={admin}/>}/>
-        <Route path='/students' element={<Students/>}/>
-        <Route path='/teachers' element={<Teachers />}/>
+        <Route path='/students' element={<Students loading={loading} data={data} error={error}/>}/>
+        <Route path='/teachers' element={<Teachers loading={loading} data={data} error={error} />}/>
         <Route path='/' element={<Profile admin={admin} setadmin={setadmin} adminn={adminn}/>}/>
         <Route path='/adds' element={<Addstudent/>}/>
         <Route path='/addt' element={<Addteacher  />}/>

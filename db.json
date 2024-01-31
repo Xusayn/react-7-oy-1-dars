@@ -1,18 +1,50 @@
 {
   "students": [
     {
-      "id": "1",
+      "0": {
+        "firstname": "",
+        "lastname": "",
+        "group": ""
+      },
+      "id": "0f97",
       "firstname": "Ali",
       "lastname": "Doe",
-      "group": "N32"
+      "group": "32"
+    },
+    {
+      "0": {
+        "firstname": "",
+        "lastname": "",
+        "group": ""
+      },
+      "id": "483f",
+      "firstname": "w",
+      "lastname": "r",
+      "group": "11"
     }
   ],
   "teachers": [
     {
-      "id": "7c4e",
-      "firstname": "weefq",
-      "lastname": "dwfw",
-      "groups": "junior"
+      "0": {
+        "firstname": "",
+        "lastname": "",
+        "groups": ""
+      },
+      "id": "d20c",
+      "firstname": "Doe",
+      "lastname": "Smith",
+      "groups": "12"
+    },
+    {
+      "0": {
+        "firstname": "",
+        "lastname": "",
+        "groups": ""
+      },
+      "id": "f65b",
+      "firstname": "j",
+      "lastname": "k",
+      "groups": "11"
     }
   ]
 }

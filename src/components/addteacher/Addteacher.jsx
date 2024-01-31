@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import "./Addteacher.scss"
 import { NavLink } from 'react-router-dom'
 import axios from 'axios'
-import getax from '../../hooks/useaxios'
 import { Button, Stack, TextField } from '@mui/material'
 const Addteacher = ({}) => {
     

@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import "./Addstudent.scss"
 import { NavLink } from 'react-router-dom'
 import axios from 'axios'
-import getax from '../../hooks/useaxios'
 import { Button, Stack, TextField } from '@mui/material'
 const Addstudent = () => {
   const [student,setstudent]=useState([{
@@ -14,6 +13,7 @@ const Addstudent = () => {
   const adds= async()=>{
     try {
       const resp= await axios.post(`http://localhost:3000/students`, student)
+    
     } catch (error) {
       console.log(error); 
     }

@@ -27,7 +27,7 @@ nav{
 .sidebar{
   width: 100px;
   height: 100%;
-  background-color: rgb(10, 80, 80);
+  background-color: rgb(46, 72, 223);
   position: absolute;
   display: flex;
   justify-content: center;
@@ -50,7 +50,8 @@ i{
 .sidebarr{
   width: 200px;
   height: 100%;
-  background-color: rgb(10, 80, 80);
+  background-color: rgb(46, 72, 223);
+
   position: absolute;
   display: flex;
   align-items: center;
